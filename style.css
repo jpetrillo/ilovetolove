@@ -1,0 +1,181 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100%;
+	cursor: url(assets/cursor.png), auto;
+}
+
+.main {
+	animation-name: bg;
+  	animation-duration: 44s;
+  	animation-iteration-count: infinite;
+  	background-repeat: repeat;
+  	background-color: white;
+}
+
+.secondary {
+	background-image: url("assets/bg_blue.gif");
+	background-repeat: repeat;
+}
+
+.draggable {
+	cursor: url(assets/drag.png), auto;
+}
+
+/*.sticker {
+	position: absolute;
+}*/
+
+a {
+	cursor: url(assets/link.png), auto;
+}
+
+.gifs-top {
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 0px 15px;
+}
+
+.poster {
+	box-shadow: rgba(0,0,0,0.35) -2px 3px 8px;
+	width: 605px;
+	height: 935px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	z-index: 1;
+	position: relative;
+}
+
+.front {
+	background-image: url("assets/bg_blue.gif");
+	background-repeat: repeat;
+}
+
+.back {
+	background-color: white; 
+}
+
+button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-family: Times New Roman;
+	font-size: 12px;
+	cursor: url(assets/link.png), auto;
+}
+
+audio {
+	margin: 0 50%;
+	transform: translate(-50%,0);
+}
+
+h1 {
+	font-family: Times New Roman;
+	font-style: italic;
+	font-weight: lighter;
+	color: black;
+	font-size:68px;
+	letter-spacing: -2px;
+	line-height: 95px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+h2 {
+	font-family: Times New Roman;
+	font-weight: lighter;
+	color: black;
+	font-size:32px;
+	letter-spacing: -1px;
+	line-height: 42px;
+	text-align: left;
+	margin: 0;
+	display: inline-block;
+}
+
+p {
+	font-size: 14px;
+	line-height: 20px;
+	padding: 0px 40px;
+	margin: 10px 0px;
+	cursor: url(assets/cursor.png), auto;
+}
+
+.ital {
+	font-style: italic;
+}
+
+.center {
+	text-align: center; 
+}
+
+.spacer {
+	padding-bottom: 18px;
+}
+
+
+#heart {
+	margin-left: -2px;
+	margin-right: -3px;
+	transform: translate(0px,3px);
+}
+
+#mid-rose {
+	margin-left: -4px;
+	margin-right: -8px;
+	transform: translate(0px,11px);
+}
+
+#love {
+	transform: translate(3px,5px);
+}
+
+#dove1 {
+	margin-left: -4px;
+	margin-right: -32px;
+	transform: translate(0px,2px);
+}
+
+#dove2 {
+	margin-left: -12px;
+	margin-right: -34px;
+	transform: translate(0px, 3px);
+}
+
+#end-rose1 {
+	margin-left: -20px;
+	margin-right: -20px;
+	transform: translate(0,7px);
+}
+
+#end-rose2 {
+	margin-left: -4px;
+	transform: translate(0,7px);
+}
+
+#click {
+	mix-blend-mode: multiply;
+	transform: translate(0,38px);
+}
+
+@keyframes bg {
+  0% {background-image: url("assets/love.gif");}
+  11% {background-image: url("assets/pianorose.gif")}
+  22% {background-image: url("assets/soul2.gif")}
+  33% {background-image: url("assets/display.gif")}
+  44% {background-image: url("assets/love7.gif")}
+  55% {background-image: url("assets/dove5.gif")}
+  66% {background-image: url("assets/love2.gif")}
+  77% {background-image: url("assets/rose.gif")}
+  88% {background-image: url("assets/dove.gif")}
+  100% {background-image: url("assets/display.gif")}
+}
