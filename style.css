@@ -80,10 +80,19 @@ a {
 	background-color: white; 
 }
 
-button {
+.button-one {
 	position: absolute;
 	top: 10px;
 	right: 10px;
+	font-family: Times New Roman;
+	font-size: 12px;
+	cursor: url(assets/link.png), auto;
+}
+
+.button-two {
+	position: absolute;
+	top: 10px;
+	right: 50px;
 	font-family: Times New Roman;
 	font-size: 12px;
 	cursor: url(assets/link.png), auto;
